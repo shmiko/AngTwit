@@ -1,0 +1,13 @@
+{
+  "name": "AngTwit",
+  "version": "0.1.0",
+  "authors": [
+    "Paul Jones <shmiko@gmail.com>"
+  ],
+  "description": "A Twitter Real-Time Search Application",
+  "license": "MIT",
+  "dependencies": {
+    "angular-material": "~0.5.1",
+    "angular-socket-io": "~0.6.0"
+  }
+}
