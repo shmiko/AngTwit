@@ -7,10 +7,10 @@ var Twit = require('twit');
 var searches = {};
 
 var T = new Twit({
-  consumer_key: 'xxxxxxxx',
-  consumer_secret: 'xxxxxxxx',
-  access_token: 'xxxxxxxx',
-  access_token_secret: 'xxxxxxxx'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token: '',
+  access_token_secret: ''
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -37,7 +37,7 @@ io.on('connection', function(socket) {
       });
 
       stream.on('limit', function(limitMessage) {
-        console.log('Limit for User : ' + socket.id + ' on query ' + q + ' has rechead!');
+        console.log('Max Limit for User : ' + socket.id + ' on query ' + q + ' has rechead!');
       });
 
       stream.on('warning', function(warning) {
