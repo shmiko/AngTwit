@@ -7,10 +7,10 @@ var Twit = require('twit');
 var searches = {};
 
 var T = new Twit({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token: '',
-  access_token_secret: ''
+  consumer_key: 'K8Kggw18Dd3WsqCYfq0vzdeQx',
+  consumer_secret: 'IsdP2TPrtSiRFeZnYuwjzlN1UHBeZFZtRa4Ippswe0VAHxGBr5',
+  access_token: '29664554-I4tOznq8ztIn3vUzYktE7yAfM7Oq0eCrCmqoymsay',
+  access_token_secret: 'Uti9xGMpdDfM322j5G7EduSRh5QbJ3inh2b75JapGfuZu'
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -74,5 +74,5 @@ io.on('connection', function(socket) {
 
 });
 
-server.listen(3000);
-console.log('Server listening on port 3000');
+server.listen(3002);
+console.log('Server listening on port 3002');
